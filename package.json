@@ -12,17 +12,24 @@
     "start": "node build/server.js",
     "dev": "tsx watch src/server.ts",
     "poststart": "rimraf build",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fastify": "^5.0.0",
-    "fastify-plugin": "^5.0.0",
     "@fastify/autoload": "^6.0.0",
     "@fastify/sensible": "^6.0.0",
-    "fastify-cli": "^7.4.0"
+    "better-sqlite3": "^12.2.0",
+    "fastify": "^5.0.0",
+    "fastify-cli": "^7.4.0",
+    "fastify-plugin": "^5.0.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.0.5",
+    "ts-jest": "^29.4.1",
+    "tsx": "^4.20.3"
+  }
 }
